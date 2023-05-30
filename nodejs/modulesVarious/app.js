@@ -72,7 +72,7 @@ setInterval(sumarDos, 1500, 5, 6); */
 
 const fs = require('fs');
 
-/* fs.readFile('index.html', 'utf-8', (err, contenido) => {
+fs.readFileSync('index.html', 'utf-8', (err, contenido) => {
     if(err){
         console.log(err);
         //throw err;
@@ -81,11 +81,38 @@ const fs = require('fs');
         console.log(contenido);
     } 
     console.log('Este es un mensaje...');
-}); */
+});
 
-fs.rename('index.html', 'main.html', (err) => {
+fs.renameSync('index.html', 'main.html', (err) => {
     if (err) {
        throw err; 
     }
     console.log("Nombre cambiado exitosamente...");
 });
+
+// Agregar contenido al final de un archivo
+
+fs.appendFileSync('index.html', '<p>Hola</p>', (err)=>{
+    if(err){
+        throw err;
+    }
+    console.log('Archivo actualizado');
+})
+
+//Remplazar todo el contenido del archivo
+
+fs.writeFileSync('index.html', 'Contenido Nuevo', (err)=>{
+    if(err){
+        throw err;
+    }
+    console.log('Contenido remplazado');
+});
+
+// Eliminar archivos
+
+fs.unlinkSync('main.html', (err)=>{
+    if(err){
+        throw err;
+    }
+    console.log('Archivo eliminado');
+})
