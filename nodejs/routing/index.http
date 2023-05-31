@@ -1,0 +1,6 @@
+POST http://localhost:3000/cursos/programacion
+Content-Type: 'application/json'
+
+{
+    "titulo": "Aprende node js"
+}
