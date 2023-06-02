@@ -1,2 +1,1 @@
-# learning
-Code I do while learning
+# Learned code storage repository for study or recycling
