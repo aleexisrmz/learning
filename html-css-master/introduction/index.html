@@ -10,5 +10,96 @@
     <!-- Esto es un texto -->
     <p> <small>Hola</small> <b>mundo</b>, <strong>este</strong> <em>es una</em> pagina web</p>
 
+    
+    <!-- Esto es un texto con estilos -->
+    <div style="color: blue"><p> <small>Hola</small> <b>mundo</b>, <strong>este</strong> <em>es una</em> pagina web</p></div>
+
+    
+    <!-- id class -->
+    <p id="miPrimeraWeb">Mi primera web</p>
+    <style>
+        #miPrimeraWeb{
+            background-color: aliceblue;
+        }
+    </style>
+
+    
+    <!-- class-->
+    <p class="miPrimeraWeb">Mi primera web</p>
+    <style>
+        .miPrimeraWeb{
+            background-color: aliceblue;
+        }
+    </style>
+
+    <!-- Enlaces -->
+    <a href="https://www.google.com">Ir a Google</a> <br>
+
+    <!-- Enlaces a rutas locales -->
+    <a href="contacto.html">Pagina externa</a><br>
+
+    <!-- Imagenes -->
+    <img src="https://c8.alamy.com/zoomses/6/7e4e7f022c054a2c81570c2829b02ffc/panfw1.jpg" alt="Escultura">
+
+    <!-- Listas -->
+    <ol>
+        <ol>
+            <li>elemento 1</li>
+        </ol>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+    </ol>
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+    </ul>
+    
+    <!-- Formularios -->
+    <form action="">
+        <label>Pon algo: </label>
+        <br>
+        <input type="text" placeholder="Escribe algo" name="" id="">
+    </form>
+
+    <form action="">
+
+        <fieldset>
+            <legend>Nuestro formulario</legend>
+            <input type="text" name="" id="">
+            <input type="date" name="" id="">
+        </fieldset>
+
+        <div>
+            <label>Pon algo: </label>
+        </div>
+        <div>
+            <input type="text" placeholder="Escribe algo" name="" id="" required>
+        </div>
+        <div>
+            <input type="number" placeholder="Escribe un numero" name="" id="">
+        </div>
+        <div>
+            <input type="date" placeholder="Escribe una fecha" name="" id="">
+        </div>
+        <div>
+            <input type="email" placeholder="Escribe tu email" name="" id="">
+        </div>
+        <div>
+            <p>como nos conociste?</p>
+            <input type="radio" name="contact" id="email1">
+            <label for="email1">Email</label>
+            <input type="radio" name="contact" id="phone1">
+            <label for="phone1">Telefono</label>
+        </div>
+
+        <br><br>
+        <select name="" id="">
+            <option value="Email">Email</option>
+            <option value="Telefono">Telefono</option>
+        </select>
+    </form>
+
 </body>
 </html>
